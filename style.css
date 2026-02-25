@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video,
+svg {
+    max-width: 100%;
+}
+
+body {
+    background-image: url(img/night-sky.jpg);
+    min-height: 100dvh;
+    background-size: cover;
+    background-position-y: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.rocket-container {
+    padding: 0;
+    max-width: 100px;
+    margin: 0;
+}
+
+.ui {
+    display: flex;
+}
+
+.rocket-container-launch {
+    animation: launch-drunkmode infinite;
+}
+
+#happy {
+    align-items: flex-end;
+}
+
+@keyframes launch {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0dvh, -100dvw);
+    }
+}
+
+@keyframes launch-drunkmode {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    5% {
+        transform: translate(10dvh, 66dvw);
+    }
+
+    10% {
+        transform: translate(80dvh, -54dvw);
+    }
+
+    15% {
+        transform: translate(67dvh, -22dvw);
+    }
+
+    20% {
+        transform: translate(-24dvh, 55dvw);
+    }
+
+    25% {
+        transform: translate(3dvh, -12dvw);
+    }
+
+    30% {
+        transform: translate(74dvh, 55dvw);
+    }
+
+    35% {
+        transform: translate(-88dvh, -6dvw);
+    }
+
+    40% {
+        transform: translate(5dvh, 90dvw);
+    }
+
+    45% {
+        transform: translate(-98dvh, 72dvw);
+    }
+
+    50% {
+        transform: translate(41dvh, -41dvw);
+    }
+
+    55% {
+        transform: translate(-8dvh, -6dvw);
+    }
+
+    60% {
+        transform: translate(52dvh, -54dvw);
+    }
+
+    65% {
+        transform: translate(80dvh, 45dvw);
+    }
+
+    70% {
+        transform: translate(-92dvh, -73dvw);
+    }
+
+    75% {
+        transform: translate(-5dvh, 12dvw);
+    }
+
+    80% {
+        transform: translate(28dvh, -67dvw);
+    }
+
+    85% {
+        transform: translate(80dvh, 43dvw);
+    }
+
+    90% {
+        transform: translate(-43dvh, -99dvw);
+    }
+
+    95% {
+        transform: translate(23dvh, 41dvw);
+    }
+
+    100% {
+        transform: translate(0dvh, -100dvw);
+    }
+}
